@@ -1,0 +1,13 @@
+echo "# rayanabot" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/AVAZBEK20021011/rayanabot.git
+git push -u origin main
+
+
+
+git remote add origin https://github.com/AVAZBEK20021011/rayanabot.git
+git branch -M main
+git push -u origin main

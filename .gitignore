@@ -1,13 +1,21 @@
 # Byte-compiled / optimized / DLL files
+<<<<<<< HEAD
 /__pycache__
+=======
+>>>>>>> 6fe06e3e76ea0eb0ba5f622a9e1fe25342ab0a5e
 __pycache__/
 *.py[cod]
 *$py.class
 
+<<<<<<< HEAD
 #-----------logins
 # C extensions
 *.so
 *.rar
+=======
+# C extensions
+*.so
+>>>>>>> 6fe06e3e76ea0eb0ba5f622a9e1fe25342ab0a5e
 
 # Distribution / packaging
 .Python
@@ -96,7 +104,10 @@ ipython_config.py
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
+<<<<<<< HEAD
 .idea/
+=======
+>>>>>>> 6fe06e3e76ea0eb0ba5f622a9e1fe25342ab0a5e
 
 # Celery stuff
 celerybeat-schedule
@@ -107,17 +118,23 @@ celerybeat.pid
 
 # Environments
 .env
+<<<<<<< HEAD
 env2/
+=======
+>>>>>>> 6fe06e3e76ea0eb0ba5f622a9e1fe25342ab0a5e
 .venv
 env/
 venv/
 ENV/
 env.bak/
 venv.bak/
+<<<<<<< HEAD
 .idea/
 __pycache__/
 archieve/
 
+=======
+>>>>>>> 6fe06e3e76ea0eb0ba5f622a9e1fe25342ab0a5e
 
 # Spyder project settings
 .spyderproject
@@ -135,4 +152,8 @@ archieve/
 dmypy.json
 
 # Pyre type checker
+<<<<<<< HEAD
 .pyre/
+=======
+.pyre/
+>>>>>>> 6fe06e3e76ea0eb0ba5f622a9e1fe25342ab0a5e

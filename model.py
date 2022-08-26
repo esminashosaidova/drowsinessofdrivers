@@ -9,9 +9,12 @@ from keras.layers import Dropout,Conv2D,Flatten,Dense, MaxPooling2D, BatchNormal
 from keras.models import load_model
 
 
-def generator(dir, gen=image.ImageDataGenerator(rescale=1./255), shuffle=True,batch_size=1,target_size=(24,24),class_mode='categorical' ):
+def generator(dir, gen=image.ImageDataGenerator(rescale=1./255), 
+                                                shuffle=True,batch_size=1,
+                                                target_size=(24,24),class_mode='categorical' ):
 
-    return gen.flow_from_directory(dir,batch_size=batch_size,shuffle=shuffle,color_mode='grayscale',class_mode=class_mode,target_size=target_size)
+    return gen.flow_from_directory(dir,batch_size=batch_size,shuffle=shuffle,
+                                    color_mode='grayscale',class_mode=class_mode,target_size=target_size)
 
 BS= 32
 TS=(24,24)
@@ -21,17 +24,11 @@ SPE= len(train_batch.classes)//BS
 VS = len(valid_batch.classes)//BS
 print(SPE,VS)
 
-
-# img,labels= next(train_batch)
-# print(img.shape)
-
 model = Sequential([
     Conv2D(32, kernel_size=(3, 3), activation='relu', input_shape=(24,24,1)),
     MaxPooling2D(pool_size=(1,1)),
     Conv2D(32,(3,3),activation='relu'),
     MaxPooling2D(pool_size=(1,1)),
-#32 convolution filters used each of size 3x3
-#again
     Conv2D(64, (3, 3), activation='relu'),
     MaxPooling2D(pool_size=(1,1)),
 
